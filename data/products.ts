@@ -21,7 +21,7 @@ export const products: Product[] = [
     category: "Shoes",
     price: 72000,
     image:
-  "https://res.cloudinary.com/kcxmd95c/image/upload/v1789240189/images_5.jpg",
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789240189/images_5.jpg",
     description:
       "A minimal court-inspired sneaker with a refined finish and versatile profile.",
     details: ["Court-inspired design", "Padded footbed", "Rubber outsole"],
@@ -34,7 +34,7 @@ export const products: Product[] = [
     category: "Shoes",
     price: 75500,
     image:
-  "https://res.cloudinary.com/kcxmd95c/image/upload/v1789240387/images.jpg",
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789240387/images.jpg",
     description:
       "Lightweight everyday runners built for movement without sacrificing style.",
     details: ["Lightweight construction", "Breathable upper", "Flexible outsole"],
@@ -47,7 +47,7 @@ export const products: Product[] = [
     category: "Shoes",
     price: 48500,
     image:
-  "https://res.cloudinary.com/kcxmd95c/image/upload/v1789240398/mens_slip_on_sneaker_white_01_2000x.jpg",
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789240398/mens_slip_on_sneaker_white_01_2000x.jpg",
     description:
       "An understated slip-on silhouette made for quick, comfortable everyday dressing.",
     details: ["Slip-on design", "Soft interior", "Flexible sole"],
@@ -60,7 +60,7 @@ export const products: Product[] = [
     category: "Shoes",
     price: 89500,
     image:
-  "https://res.cloudinary.com/kcxmd95c/image/upload/v1789240410/RelaxedLoaferTripleBlack_2copy.jpg",
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789240410/RelaxedLoaferTripleBlack_2copy.jpg",
     description:
       "A refined leather loafer that moves easily between relaxed and polished looks.",
     details: ["Leather upper", "Classic loafer profile", "Cushioned insole"],
@@ -73,7 +73,7 @@ export const products: Product[] = [
     category: "Shoes",
     price: 63500,
     image:
-  "https://res.cloudinary.com/kcxmd95c/image/upload/v1789240425/images_1.jpg",
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789240425/images_1.jpg",
     description:
       "A versatile casual silhouette with a balanced shape and understated finish.",
     details: ["Everyday silhouette", "Comfort footbed", "Durable outsole"],
@@ -99,7 +99,8 @@ export const products: Product[] = [
     name: "Muse Shoulder Bag",
     category: "Bags",
     price: 64500,
-    image: "/images/products/muse-shoulder.jpg",
+    image:
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789242102/1.jpg",
     description:
       "A compact shoulder bag designed to complement both casual and elevated outfits.",
     details: ["Compact profile", "Shoulder strap", "Secure closure"],
@@ -111,7 +112,8 @@ export const products: Product[] = [
     name: "Arc Tote",
     category: "Bags",
     price: 78500,
-    image: "/images/products/arc-tote.jpg",
+    image:
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789242113/images_2.jpg",
     description:
       "A spacious tote with a structured silhouette for everyday essentials.",
     details: ["Roomy interior", "Structured handles", "Everyday carry"],
@@ -123,7 +125,8 @@ export const products: Product[] = [
     name: "Line Crossbody",
     category: "Bags",
     price: 58500,
-    image: "/images/products/line-crossbody.jpg",
+    image:
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789242125/1674851791-0400018020728-taupebrass-1674851767.jpg",
     description:
       "A streamlined crossbody built for lightweight everyday carrying.",
     details: ["Crossbody strap", "Compact interior", "Minimal hardware"],
@@ -135,7 +138,8 @@ export const products: Product[] = [
     name: "Frame Mini Bag",
     category: "Bags",
     price: 52500,
-    image: "/images/products/frame-mini.jpg",
+    image:
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789242137/Minimalist-Soft-Leather-Box-Bag-for-Women-Adjustable-Crossbody-Shoulder-Purse-Multi-Compartment-Fashion-Daily-Accessory.jpg",
     description:
       "A smaller take on the structured Frame silhouette for essentials on the go.",
     details: ["Mini profile", "Adjustable strap", "Secure closure"],
@@ -147,7 +151,8 @@ export const products: Product[] = [
     name: "Atlas Weekender",
     category: "Bags",
     price: 98500,
-    image: "/images/products/atlas-weekender.jpg",
+    image:
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789242148/travel-bag-banner-with-empty-space-without-text-beige-background-holiday-banner-poster-background_653347-8296.jpg",
     description:
       "A spacious weekender designed for short trips and effortless everyday travel.",
     details: ["Large main compartment", "Carry handles", "Travel-ready design"],
