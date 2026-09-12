@@ -1,4 +1,5 @@
 import CategoryStrip from "@/components/home/CategoryStrip";
+import FeaturedCollection from "@/components/home/FeaturedCollection";
 import Hero from "@/components/home/Hero";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <Hero />
       <CategoryStrip />
+      <FeaturedCollection />
     </main>
   );
 }
