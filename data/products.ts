@@ -20,7 +20,8 @@ export const products: Product[] = [
     name: "Axis Court Sneakers",
     category: "Shoes",
     price: 72000,
-    image: "/images/products/axis-court.jpg",
+    image:
+  "https://res.cloudinary.com/kcxmd95c/image/upload/v1789240189/images_5.jpg",
     description:
       "A minimal court-inspired sneaker with a refined finish and versatile profile.",
     details: ["Court-inspired design", "Padded footbed", "Rubber outsole"],
@@ -32,7 +33,8 @@ export const products: Product[] = [
     name: "Form Runner",
     category: "Shoes",
     price: 75500,
-    image: "/images/products/form-runner.jpg",
+    image:
+  "https://res.cloudinary.com/kcxmd95c/image/upload/v1789240387/images.jpg",
     description:
       "Lightweight everyday runners built for movement without sacrificing style.",
     details: ["Lightweight construction", "Breathable upper", "Flexible outsole"],
@@ -44,7 +46,8 @@ export const products: Product[] = [
     name: "Mono Slip-Ons",
     category: "Shoes",
     price: 48500,
-    image: "/images/products/mono-slip-ons.jpg",
+    image:
+  "https://res.cloudinary.com/kcxmd95c/image/upload/v1789240398/mens_slip_on_sneaker_white_01_2000x.jpg",
     description:
       "An understated slip-on silhouette made for quick, comfortable everyday dressing.",
     details: ["Slip-on design", "Soft interior", "Flexible sole"],
@@ -56,7 +59,8 @@ export const products: Product[] = [
     name: "Crest Leather Loafers",
     category: "Shoes",
     price: 89500,
-    image: "/images/products/crest-loafers.jpg",
+    image:
+  "https://res.cloudinary.com/kcxmd95c/image/upload/v1789240410/RelaxedLoaferTripleBlack_2copy.jpg",
     description:
       "A refined leather loafer that moves easily between relaxed and polished looks.",
     details: ["Leather upper", "Classic loafer profile", "Cushioned insole"],
@@ -68,7 +72,8 @@ export const products: Product[] = [
     name: "Terra Casual Shoes",
     category: "Shoes",
     price: 63500,
-    image: "/images/products/terra-casual.jpg",
+    image:
+  "https://res.cloudinary.com/kcxmd95c/image/upload/v1789240425/images_1.jpg",
     description:
       "A versatile casual silhouette with a balanced shape and understated finish.",
     details: ["Everyday silhouette", "Comfort footbed", "Durable outsole"],
