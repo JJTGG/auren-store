@@ -244,7 +244,8 @@ export const products: Product[] = [
     name: "Frame Leather Wallet",
     category: "Accessories",
     price: 24500,
-    image: "/images/products/frame-wallet.jpg",
+    image:
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789261244/edited-twobit-leather-wallet-handmade-card-durable-rugged-quality-lifestyle-3836.jpg",
     description:
       "A compact leather wallet designed to keep everyday essentials organized.",
     details: ["Compact profile", "Multiple card slots", "Slim construction"],
@@ -256,7 +257,8 @@ export const products: Product[] = [
     name: "Axis Card Holder",
     category: "Accessories",
     price: 18500,
-    image: "/images/products/axis-card-holder.jpg",
+    image:
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789261253/AL15505_FRONT_POCKET_PRIVACY_CARD_WALLET_ES_s2_800x.jpg",
     description:
       "A slim card holder for carrying the essentials without unnecessary bulk.",
     details: ["Slim profile", "Multiple card slots", "Easy carry"],
@@ -268,7 +270,8 @@ export const products: Product[] = [
     name: "Arc Metal Sunglasses",
     category: "Accessories",
     price: 32500,
-    image: "/images/products/arc-sunglasses.jpg",
+    image:
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789261262/P01180818.jpg",
     description:
       "A lightweight metal frame with a clean, contemporary silhouette.",
     details: ["Metal frame", "UV protection", "Lightweight design"],
@@ -280,7 +283,8 @@ export const products: Product[] = [
     name: "Mono Leather Belt",
     category: "Accessories",
     price: 27500,
-    image: "/images/products/mono-belt.jpg",
+    image:
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789261272/81KB37T2dCL._AC_UY1000_.jpg",
     description:
       "A clean leather belt designed to work effortlessly across everyday outfits.",
     details: ["Leather construction", "Minimal buckle", "Adjustable fit"],
