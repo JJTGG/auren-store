@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     follow: true,
   },
 
-  openGraph: {
+    openGraph: {
     type: "website",
     locale: "en_NG",
     siteName: "AUREN",
@@ -54,6 +54,14 @@ export const metadata: Metadata = {
     description:
       "Thoughtfully selected shoes, bags, watches, and accessories. Nationwide delivery across Nigeria.",
     url: "https://auren-store-delta.vercel.app",
+    images: [
+      {
+        url: "https://res.cloudinary.com/kcxmd95c/image/upload/v1789233243/1789233106660.png",
+        width: 1200,
+        height: 630,
+        alt: "AUREN — The New Everyday",
+      },
+    ],
   },
 
   twitter: {
@@ -61,8 +69,10 @@ export const metadata: Metadata = {
     title: "AUREN — The New Everyday",
     description:
       "Thoughtfully selected shoes, bags, watches, and accessories. Nationwide delivery across Nigeria.",
+    images: [
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789233243/1789233106660.png",
+    ],
   },
-};
 
 export default function RootLayout({
   children,
