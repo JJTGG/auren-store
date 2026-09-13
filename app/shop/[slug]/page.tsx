@@ -89,7 +89,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
               {product.available && (
                 <a
-                  href={`https://wa.me/2340000000000?text=${whatsappMessage}`}
+                  href={`https://wa.me/2348147436789?text=${whatsappMessage}`}
                   target="_blank"
                   rel="noreferrer"
                   className="mt-8 flex w-full items-center justify-center rounded-full bg-[var(--foreground)] px-6 py-4 text-sm font-medium text-white transition hover:opacity-85"
