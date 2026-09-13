@@ -178,7 +178,8 @@ export const products: Product[] = [
     name: "Meridian Classic Watch",
     category: "Watches",
     price: 68500,
-    image: "/images/products/meridian-watch.jpg",
+    image:
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789259921/1_1.jpg",
     description:
       "A classic watch profile with understated detailing and a refined finish.",
     details: ["Classic dial", "Adjustable strap", "Refined finish"],
@@ -190,7 +191,8 @@ export const products: Product[] = [
     name: "Arc Chronograph",
     category: "Watches",
     price: 82000,
-    image: "/images/products/arc-chronograph.jpg",
+    image:
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789259929/2.jpg",
     description:
       "A contemporary chronograph-inspired watch with a confident everyday profile.",
     details: ["Chronograph-inspired dial", "Metal case", "Adjustable strap"],
@@ -202,7 +204,8 @@ export const products: Product[] = [
     name: "Mono Square Watch",
     category: "Watches",
     price: 59500,
-    image: "/images/products/mono-square.jpg",
+    image:
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789259936/41UraGszQLL._AC_.jpg",
     description:
       "A modern square watch with a clean geometric profile.",
     details: ["Square case", "Minimal markers", "Adjustable strap"],
@@ -214,7 +217,8 @@ export const products: Product[] = [
     name: "Crest Automatic Watch",
     category: "Watches",
     price: 115000,
-    image: "/images/products/crest-automatic.jpg",
+    image:
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789259943/714qayo2o-L._AC_UY1000_.jpg",
     description:
       "A more elevated timepiece combining classic proportions with modern detailing.",
     details: ["Automatic-inspired design", "Metal case", "Premium profile"],
