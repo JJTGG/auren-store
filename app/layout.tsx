@@ -7,22 +7,61 @@ import Footer from "@/components/layout/Footer";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  display: "swap",
 });
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
-  display: "swap",
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://auren-store-delta.vercel.app"),
+
   title: {
     default: "AUREN — The New Everyday",
     template: "%s — AUREN",
   },
+
   description:
-    "Thoughtfully selected shoes, bags, watches and accessories for every part of your day.",
+    "Discover thoughtfully selected shoes, bags, watches, and accessories from AUREN. Nationwide delivery across Nigeria.",
+
+  applicationName: "AUREN",
+
+  keywords: [
+    "AUREN",
+    "fashion store Nigeria",
+    "shoes Nigeria",
+    "bags Nigeria",
+    "watches Nigeria",
+    "fashion accessories Nigeria",
+  ],
+
+  authors: [{ name: "AUREN" }],
+
+  creator: "AUREN",
+  publisher: "AUREN",
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  openGraph: {
+    type: "website",
+    locale: "en_NG",
+    siteName: "AUREN",
+    title: "AUREN — The New Everyday",
+    description:
+      "Thoughtfully selected shoes, bags, watches, and accessories. Nationwide delivery across Nigeria.",
+    url: "https://auren-store-delta.vercel.app",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "AUREN — The New Everyday",
+    description:
+      "Thoughtfully selected shoes, bags, watches, and accessories. Nationwide delivery across Nigeria.",
+  },
 };
 
 export default function RootLayout({
@@ -32,11 +71,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${playfair.variable}`}>
-  <Header />
-  {children}
-  <Footer />
-</body>
+      <body
+        className={`${inter.variable} ${playfair.variable} antialiased`}
+      >
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
