@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const whatsappUrl =
-  "https://wa.me/2340000000000?text=Hi%20AUREN%2C%20I%20have%20a%20question.";
+  "https://wa.me/2348147436789?text=Hi%20AUREN%2C%20I%20have%20a%20question.";
 
 export default function ContactPage() {
   return (
@@ -56,7 +56,7 @@ export default function ContactPage() {
               </p>
 
               <a
-                href="mailto:hello@auren-store.com"
+                href="mailto:tgghub01@gmail.com"
                 className="mt-3 inline-block text-sm font-medium underline underline-offset-4"
               >
                 hello@auren-store.com
