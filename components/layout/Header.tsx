@@ -36,7 +36,7 @@ export default function Header() {
         </nav>
 
         <a
-          href="https://wa.me/2340000000000"
+          href="https://wa.me/2348147436789"
           target="_blank"
           rel="noreferrer"
           className="hidden bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-opacity hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-foreground focus:ring-offset-4 sm:block"
@@ -75,7 +75,7 @@ export default function Header() {
             ))}
 
             <a
-              href="https://wa.me/2340000000000"
+              href="https://wa.me/2348147436789"
               target="_blank"
               rel="noreferrer"
               className="bg-foreground px-5 py-3 text-center text-sm font-medium text-background"
