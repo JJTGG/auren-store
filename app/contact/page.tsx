@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const whatsappUrl =
-  "https://wa.me/2348147436789?text=Hi%20AUREN%2C%20I%20have%20a%20question.";
+  "https://wa.me/2348147436789?text=Hi%2C%20I%27m%20testing%20the%20AUREN%20storefront%20demo.%20I%20understand%20this%20is%20a%20fictional%20project%20and%20does%20not%20represent%20verified%20stock%20or%20delivery.";
 
 export default function ContactPage() {
   return (
@@ -9,7 +9,7 @@ export default function ContactPage() {
       <section className="px-5 py-16 sm:px-8 sm:py-24">
         <div className="mx-auto max-w-5xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[var(--muted)]">
-            Contact
+            Contact flow demo
           </p>
 
           <h1 className="mt-4 max-w-3xl font-serif text-5xl leading-tight tracking-tight sm:text-6xl">
@@ -17,8 +17,9 @@ export default function ContactPage() {
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-8 text-[var(--muted)] sm:text-lg">
-            Need help choosing a product, checking availability, or placing
-            an order? Reach out and we&apos;ll help you out.
+            This page demonstrates how a storefront might present contact
+            information and a WhatsApp enquiry path. AUREN is a fictional
+            portfolio project, not an operating retailer.
           </p>
         </div>
       </section>
@@ -31,21 +32,24 @@ export default function ContactPage() {
             </p>
 
             <h2 className="mt-3 font-serif text-3xl tracking-tight">
-              The quickest way to reach us.
+              Demonstration enquiry
             </h2>
 
             <p className="mt-4 max-w-md text-sm leading-7 text-[var(--muted)]">
-              For orders, product questions, and general enquiries, send us a
-              message on WhatsApp.
+              The link opens WhatsApp with a prefilled demonstration
+              message. It does not place or record an order, verify
+              inventory, or confirm fulfilment. The configured destination
+              has not been independently verified as an operating store
+              contact.
             </p>
 
             <a
               href={whatsappUrl}
               target="_blank"
-              rel="noreferrer"
-              className="mt-7 inline-flex rounded-full bg-[var(--foreground)] px-7 py-3.5 text-sm font-medium text-white transition hover:opacity-85"
+              rel="noopener noreferrer"
+              className="mt-7 inline-flex rounded-full bg-[var(--foreground)] px-7 py-3.5 text-sm font-medium text-white transition hover:opacity-85 focus:outline-none focus:ring-2 focus:ring-[var(--foreground)] focus:ring-offset-4"
             >
-              Chat on WhatsApp
+              Open WhatsApp demo
             </a>
           </div>
 
@@ -61,6 +65,10 @@ export default function ContactPage() {
               >
                 hello@auren-store.com
               </a>
+              <p className="mt-2 text-xs leading-5 text-[var(--muted)]">
+                Demonstration contact details; the displayed address and
+                email link are being reviewed separately.
+              </p>
             </div>
 
             <div>
@@ -69,8 +77,9 @@ export default function ContactPage() {
               </p>
 
               <p className="mt-3 max-w-md text-sm leading-7 text-[var(--muted)]">
-                We deliver across Nigeria. Delivery options and timelines are
-                confirmed when your order is placed.
+                This project does not operate a delivery service or
+                establish delivery coverage, fees or timelines. Those
+                details would need to be provided by an actual retailer.
               </p>
             </div>
           </div>
@@ -80,35 +89,38 @@ export default function ContactPage() {
       <section className="px-5 py-16 sm:px-8 sm:py-24">
         <div className="mx-auto max-w-5xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[var(--muted)]">
-            Before you message
+            About this demo
           </p>
 
           <div className="mt-8 divide-y divide-[var(--border)] border-y border-[var(--border)]">
             <div className="py-6">
               <h2 className="font-serif text-xl">
-                How do I place an order?
+                Does this page place an order?
               </h2>
               <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-                Open the product you want and use the WhatsApp button to start
-                your order.
+                No. The WhatsApp link illustrates a prefilled enquiry
+                message. AUREN does not record or process orders.
               </p>
             </div>
 
             <div className="py-6">
               <h2 className="font-serif text-xl">
-                Can I ask about a product first?
+                Are the products and prices real offers?
               </h2>
               <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-                Yes. Send us the product name and your question on WhatsApp.
+                No. The catalogue is illustrative content for a storefront
+                experiment. Actual availability and retail prices have not
+                been verified.
               </p>
             </div>
 
             <div className="py-6">
               <h2 className="font-serif text-xl">
-                Do you deliver outside your city?
+                Does AUREN provide delivery?
               </h2>
               <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-                Yes. Nationwide delivery is available across Nigeria.
+                No delivery service is represented by this demonstration.
+                Delivery arrangements are not established by this project.
               </p>
             </div>
           </div>
@@ -118,14 +130,14 @@ export default function ContactPage() {
       <section className="border-t border-[var(--border)] px-5 py-16 text-center sm:px-8 sm:py-20">
         <div className="mx-auto max-w-2xl">
           <h2 className="font-serif text-3xl tracking-tight sm:text-4xl">
-            Ready to find something?
+            Explore the storefront concept.
           </h2>
 
           <Link
             href="/shop"
-            className="mt-7 inline-flex rounded-full bg-[var(--foreground)] px-7 py-3.5 text-sm font-medium text-white transition hover:opacity-85"
+            className="mt-7 inline-flex rounded-full bg-[var(--foreground)] px-7 py-3.5 text-sm font-medium text-white transition hover:opacity-85 focus:outline-none focus:ring-2 focus:ring-[var(--foreground)] focus:ring-offset-4"
           >
-            Browse the collection
+            Browse demo catalogue
           </Link>
         </div>
       </section>
