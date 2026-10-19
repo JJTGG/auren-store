@@ -23,17 +23,16 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Discover thoughtfully selected shoes, bags, watches, and accessories from AUREN. Nationwide delivery across Nigeria.",
+    "Explore AUREN, a fictional fashion and lifestyle storefront experiment demonstrating product discovery and WhatsApp-first enquiries.",
 
   applicationName: "AUREN",
 
   keywords: [
     "AUREN",
-    "fashion store Nigeria",
-    "shoes Nigeria",
-    "bags Nigeria",
-    "watches Nigeria",
-    "fashion accessories Nigeria",
+    "fashion storefront demo",
+    "ecommerce portfolio project",
+    "WhatsApp ordering demo",
+    "product catalogue experiment",
   ],
 
   authors: [{ name: "AUREN" }],
@@ -52,7 +51,7 @@ export const metadata: Metadata = {
     siteName: "AUREN",
     title: "AUREN — The New Everyday",
     description:
-      "Thoughtfully selected shoes, bags, watches, and accessories. Nationwide delivery across Nigeria.",
+      "A fictional fashion storefront experiment exploring product presentation, discovery and WhatsApp-first enquiries.",
     url: "https://auren-store-delta.vercel.app",
     images: [
       {
@@ -68,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AUREN — The New Everyday",
     description:
-      "Thoughtfully selected shoes, bags, watches, and accessories. Nationwide delivery across Nigeria.",
+      "A fictional fashion storefront experiment exploring product presentation and WhatsApp-first enquiries.",
     images: [
       "https://res.cloudinary.com/kcxmd95c/image/upload/v1789233243/1789233106660.png",
     ],
@@ -86,7 +85,22 @@ export default function RootLayout({
         className={`${inter.variable} ${playfair.variable} antialiased`}
       >
         <Header />
+
+        <aside
+          aria-label="Demonstration notice"
+          className="border-b border-[var(--border)] bg-[var(--surface)] px-5 py-3 text-center text-xs leading-5 text-[var(--muted)] sm:px-8 sm:text-sm"
+        >
+          <strong className="font-semibold text-[var(--foreground)]">
+            Portfolio demo:
+          </strong>{" "}
+          AUREN is a fictional storefront. Product information and prices are
+          illustrative. This demo does not verify stock, process orders, or
+          provide delivery services. WhatsApp links demonstrate an enquiry
+          flow only.
+        </aside>
+
         {children}
+
         <Footer />
       </body>
     </html>
