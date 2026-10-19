@@ -8,7 +8,8 @@ export const products: Product[] = [
     name: "Nova Low Sneakers",
     category: "Shoes",
     price: 68500,
-    image: "/images/products/nova-low.jpg",
+    image:
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789231210/samples/ecommerce/shoes.png",
     description:
       "A clean everyday sneaker designed for effortless styling and all-day comfort.",
     details: ["Low-top silhouette", "Cushioned sole", "Everyday wear"],
@@ -87,7 +88,8 @@ export const products: Product[] = [
     name: "Frame Leather Bag",
     category: "Bags",
     price: 72000,
-    image: "/images/products/frame-bag.jpg",
+    image:
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789231212/samples/ecommerce/leather-bag-gray.jpg",
     description:
       "A structured everyday bag with a clean profile and practical interior.",
     details: ["Structured shape", "Interior compartment", "Adjustable strap"],
@@ -166,7 +168,8 @@ export const products: Product[] = [
     name: "Axis Minimal Watch",
     category: "Watches",
     price: 55000,
-    image: "/images/products/axis-watch.jpg",
+    image:
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789231208/samples/ecommerce/analog-classic.jpg",
     description:
       "A minimal timepiece with a clean dial designed for everyday wear.",
     details: ["Minimal dial", "Adjustable strap", "Everyday wear"],
@@ -232,7 +235,8 @@ export const products: Product[] = [
     name: "Line Statement Sunglasses",
     category: "Accessories",
     price: 28500,
-    image: "/images/products/line-sunglasses.jpg",
+    image:
+      "https://res.cloudinary.com/kcxmd95c/image/upload/v1789261262/P01180818.jpg",
     description:
       "A bold but balanced frame designed to finish everyday looks.",
     details: ["Statement frame", "UV protection", "Lightweight design"],
