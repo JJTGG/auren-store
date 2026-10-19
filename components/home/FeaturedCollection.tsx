@@ -2,9 +2,28 @@ import Link from "next/link";
 
 import ProductCard from "@/components/products/ProductCard";
 import { products } from "@/data/products";
+import type { Product } from "@/types/product";
+
+const featuredSlugs = [
+  "nova-low-sneakers",
+  "frame-leather-bag",
+  "axis-minimal-watch",
+  "line-statement-sunglasses",
+] as const;
 
 export default function FeaturedCollection() {
-  const featuredProducts = products.slice(0, 4);
+  const featuredProducts = featuredSlugs.reduce<Product[]>(
+    (selected, slug) => {
+      const product = products.find((item) => item.slug === slug);
+
+      if (product) {
+        selected.push(product);
+      }
+
+      return selected;
+    },
+    []
+  );
 
   return (
     <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10">
