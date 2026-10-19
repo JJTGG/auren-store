@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -16,7 +17,61 @@ export function generateStaticParams() {
   }));
 }
 
-export default async function ProductPage({ params }: ProductPageProps) {
+export async function generateMetadata({
+  params,
+}: ProductPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const product = products.find((item) => item.slug === slug);
+
+  if (!product) {
+    return {
+      title: "Product Not Found",
+      robots: {
+        index: false,
+        follow: true,
+      },
+    };
+  }
+
+  const description = `${product.description} This is an illustrative storefront listing; price, availability and delivery are unverified.`;
+
+  const title = `${product.name} — AUREN`;
+
+  return {
+    title: product.name,
+    description,
+
+    alternates: {
+      canonical: `/shop/${product.slug}`,
+    },
+
+    openGraph: {
+      type: "website",
+      locale: "en_NG",
+      siteName: "AUREN",
+      title,
+      description,
+      url: `/shop/${product.slug}`,
+      images: [
+        {
+          url: product.image,
+          alt: product.name,
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [product.image],
+    },
+  };
+}
+
+export default async function ProductPage({
+  params,
+}: ProductPageProps) {
   const { slug } = await params;
 
   const product = products.find((item) => item.slug === slug);
