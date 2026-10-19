@@ -32,8 +32,10 @@ export default async function ProductPage({ params }: ProductPageProps) {
     )
     .slice(0, 4);
 
+  const formattedPrice = product.price.toLocaleString("en-NG");
+
   const whatsappMessage = encodeURIComponent(
-    `Hi AUREN, I'd like to order the ${product.name} for ₦${product.price.toLocaleString()}.`
+    `Hi AUREN, I'm testing the AUREN storefront demo and would like to enquire about the ${product.name}. I understand the displayed price of NGN ${formattedPrice} is illustrative and availability and delivery are not verified.`
   );
 
   return (
@@ -42,7 +44,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
         <div className="mx-auto max-w-7xl">
           <Link
             href="/shop"
-            className="text-sm text-[var(--muted)] transition hover:text-[var(--foreground)]"
+            className="text-sm text-[var(--muted)] transition hover:text-[var(--foreground)] focus:outline-none focus:ring-2 focus:ring-[var(--foreground)] focus:ring-offset-4"
           >
             ← Back to shop
           </Link>
@@ -68,19 +70,24 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 {product.name}
               </h1>
 
-              <p className="mt-5 text-2xl font-medium">
-                ₦{product.price.toLocaleString()}
-              </p>
+              <div className="mt-5">
+                <p className="text-2xl font-medium">
+                  ₦{formattedPrice}
+                </p>
 
-              <div className="mt-5 flex items-center gap-2 text-sm">
-                <span
-                  className={`h-2 w-2 rounded-full ${
-                    product.available ? "bg-green-600" : "bg-red-500"
-                  }`}
-                />
-                <span className="text-[var(--muted)]">
-                  {product.available ? "In stock" : "Currently unavailable"}
-                </span>
+                <p className="mt-1 text-xs leading-5 text-[var(--muted)]">
+                  Illustrative demo price — not a verified retail offer.
+                </p>
+              </div>
+
+              <div className="mt-5 border-l-2 border-[var(--border)] pl-4">
+                <p className="text-sm font-medium">
+                  Demonstration listing
+                </p>
+                <p className="mt-1 text-sm leading-6 text-[var(--muted)]">
+                  This is not live inventory. Actual product availability
+                  has not been verified.
+                </p>
               </div>
 
               <p className="mt-8 max-w-xl text-sm leading-7 text-[var(--muted)] sm:text-base">
@@ -91,12 +98,17 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 <a
                   href={`https://wa.me/2348147436789?text=${whatsappMessage}`}
                   target="_blank"
-                  rel="noreferrer"
-                  className="mt-8 flex w-full items-center justify-center rounded-full bg-[var(--foreground)] px-6 py-4 text-sm font-medium text-white transition hover:opacity-85"
+                  rel="noopener noreferrer"
+                  className="mt-8 flex w-full items-center justify-center rounded-full bg-[var(--foreground)] px-6 py-4 text-sm font-medium text-white transition hover:opacity-85 focus:outline-none focus:ring-2 focus:ring-[var(--foreground)] focus:ring-offset-4"
                 >
-                  Order via WhatsApp
+                  Try WhatsApp enquiry demo
                 </a>
               )}
+
+              <p className="mt-3 text-xs leading-5 text-[var(--muted)]">
+                Opening WhatsApp demonstrates a prefilled enquiry only.
+                It does not create or confirm an order.
+              </p>
 
               <div className="mt-8 border-y border-[var(--border)]">
                 <div className="border-b border-[var(--border)] py-5">
@@ -112,8 +124,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 <div className="py-5">
                   <h2 className="text-sm font-medium">Delivery</h2>
                   <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-                    Nationwide delivery available across Nigeria. Delivery
-                    details will be confirmed when placing your order.
+                    This demo does not provide delivery services or confirm
+                    delivery coverage, fees, or timelines. Those details
+                    would need to be confirmed by an actual retailer.
                   </p>
                 </div>
               </div>
