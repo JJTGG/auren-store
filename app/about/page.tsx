@@ -14,9 +14,16 @@ export default function AboutPage() {
           </h1>
 
           <p className="mt-8 max-w-2xl text-base leading-8 text-[var(--muted)] sm:text-lg">
-            AUREN is a curated fashion store built around pieces that are easy
-            to wear, easy to pair, and made to fit naturally into everyday
-            life.
+            AUREN is a fictional fashion and lifestyle storefront experiment
+            built around the idea of The New Everyday. It demonstrates how
+            a curated catalogue, product detail pages and WhatsApp-first
+            enquiries can fit together in a branded shopping experience.
+          </p>
+
+          <p className="mt-5 max-w-2xl text-sm leading-7 text-[var(--muted)] sm:text-base">
+            Product names, descriptions, images and prices are demonstration
+            content. AUREN is not an operating retailer, and this site does
+            not verify stock or provide order fulfilment or delivery.
           </p>
         </div>
       </section>
@@ -25,7 +32,7 @@ export default function AboutPage() {
         <div className="mx-auto grid max-w-5xl gap-12 md:grid-cols-2 md:gap-20">
           <div>
             <p className="text-xs font-medium uppercase tracking-[0.2em] text-[var(--muted)]">
-              The idea
+              The concept
             </p>
 
             <h2 className="mt-3 font-serif text-3xl tracking-tight sm:text-4xl">
@@ -35,20 +42,21 @@ export default function AboutPage() {
 
           <div className="space-y-5 text-sm leading-7 text-[var(--muted)] sm:text-base">
             <p>
-              We believe getting dressed does not need to be complicated.
-              A good wardrobe starts with pieces that work beyond a single
-              occasion.
+              The visual direction explores a focused catalogue of everyday
+              fashion and lifestyle pieces without overwhelming visitors
+              with unnecessary choices.
             </p>
 
             <p>
-              That is why AUREN focuses on a considered selection of shoes,
-              bags, watches, and accessories rather than an endless catalogue.
+              Shoes, bags, watches and accessories provide the example
+              categories for exploring navigation, search and product
+              discovery.
             </p>
 
             <p>
-              From everyday essentials to pieces that make a little more
-              statement, everything is selected with versatility and personal
-              style in mind.
+              The project is a web development demonstration. Its catalogue
+              is illustrative rather than a statement of actual products
+              available for purchase.
             </p>
           </div>
         </div>
@@ -60,21 +68,24 @@ export default function AboutPage() {
             <div className="border-t border-[var(--border)] pt-5">
               <h2 className="font-serif text-2xl">Curated</h2>
               <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
-                A focused collection instead of endless choices.
+                A sample collection designed to demonstrate product
+                presentation and catalogue browsing.
               </p>
             </div>
 
             <div className="border-t border-[var(--border)] pt-5">
               <h2 className="font-serif text-2xl">Everyday</h2>
               <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
-                Pieces designed to work naturally with your wardrobe.
+                A visual direction built around versatile everyday pieces
+                and a considered shopping experience.
               </p>
             </div>
 
             <div className="border-t border-[var(--border)] pt-5">
-              <h2 className="font-serif text-2xl">Nigeria-wide</h2>
+              <h2 className="font-serif text-2xl">WhatsApp flow</h2>
               <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
-                Simple ordering with delivery available across Nigeria.
+                A prefilled enquiry link demonstrates one possible
+                ordering interaction without processing an order.
               </p>
             </div>
           </div>
@@ -84,14 +95,14 @@ export default function AboutPage() {
       <section className="border-t border-[var(--border)] px-5 py-16 text-center sm:px-8 sm:py-20">
         <div className="mx-auto max-w-2xl">
           <h2 className="font-serif text-3xl tracking-tight sm:text-4xl">
-            Find your next everyday piece.
+            Explore the storefront concept.
           </h2>
 
           <Link
             href="/shop"
-            className="mt-7 inline-flex rounded-full bg-[var(--foreground)] px-7 py-3.5 text-sm font-medium text-white transition hover:opacity-85"
+            className="mt-7 inline-flex rounded-full bg-[var(--foreground)] px-7 py-3.5 text-sm font-medium text-white transition hover:opacity-85 focus:outline-none focus:ring-2 focus:ring-[var(--foreground)] focus:ring-offset-4"
           >
-            Shop the collection
+            Explore demo catalogue
           </Link>
         </div>
       </section>
