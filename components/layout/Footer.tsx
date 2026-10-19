@@ -71,21 +71,9 @@ export default function Footer() {
               Social
             </h2>
 
-            <div className="mt-4 flex flex-col gap-3">
-              <Link
-                href="#"
-                className="w-fit text-sm text-muted transition-colors hover:text-foreground"
-              >
-                Instagram
-              </Link>
-
-              <Link
-                href="#"
-                className="w-fit text-sm text-muted transition-colors hover:text-foreground"
-              >
-                TikTok
-              </Link>
-            </div>
+            <p className="mt-4 max-w-xs text-sm leading-6 text-muted">
+              Social profiles are not configured for this demo.
+            </p>
           </div>
         </div>
 
