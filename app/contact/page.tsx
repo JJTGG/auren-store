@@ -56,18 +56,19 @@ export default function ContactPage() {
           <div className="space-y-8">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.2em] text-[var(--muted)]">
-                Email
+                Portfolio contact email
               </p>
 
               <a
                 href="mailto:tgghub01@gmail.com"
                 className="mt-3 inline-block text-sm font-medium underline underline-offset-4"
               >
-                hello@auren-store.com
+                tgghub01@gmail.com
               </a>
+
               <p className="mt-2 text-xs leading-5 text-[var(--muted)]">
-                Demonstration contact details; the displayed address and
-                email link are being reviewed separately.
+                This is a portfolio contact address, not a dedicated
+                AUREN business inbox.
               </p>
             </div>
 
